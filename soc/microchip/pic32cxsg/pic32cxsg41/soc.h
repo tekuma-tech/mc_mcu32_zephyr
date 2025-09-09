@@ -52,7 +52,7 @@
  * version of global clock registers.
  * Once PIC32CXSG has Microchip DFP compliant driver these will no longer be required.
  */
-#define MCLK (DT_REG_ADDR(DT_NODELABEL(mclk)))
+#define MCLK ((Mclk *)(DT_REG_ADDR(DT_NODELABEL(mclk))))
 #define GCLK ((Gclk *)(DT_REG_ADDR(DT_NODELABEL(gclk))))
 
 #endif /* _SOC_MICROCHIP_PIC32CXSG41_SOC_H_ */
